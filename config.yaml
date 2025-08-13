@@ -1,0 +1,31 @@
+# --- 1. Data and Preprocessing Settings ---
+data:
+  sample_rate: 8000                     # Target sample rate for all audio files.
+  target_length_samples: 8192           # Fixed length for all audio clips (~1.024s).
+  
+  # Mel Spectrogram Parameters (from src/preprocess.py)
+  # These values are standard for speech processing.
+  mel_spectrogram:
+    n_fft: 400                          # FFT window size.
+    hop_length: 160                     # Hop length between frames.
+    n_mels: 64                          # Number of Mel frequency bands.
+
+# --- 2. Model Training Settings ---
+training:
+  device: "auto"                        # "auto" will use "cuda" if available, else "cpu".
+  num_epochs: 20                        # Number of complete passes through the training data.
+  batch_size: 64                        # Number of samples per batch.
+  learning_rate: 0.001                  # Step size for the Adam optimizer.
+  
+# --- 3. Model Architecture Settings ---
+model:
+  num_classes: 10                       # Number of output classes (digits 0-9).
+  dropout_rate: 0.5                     # Dropout probability for regularization.
+  saved_models_dir: "saved_models"      # Directory to save the best model checkpoints.
+  best_model_name: "best_model.pth"     # Filename for the saved model.
+
+# --- 4. Real-Time Application Settings (for app/realtime_mic.py) ---
+realtime_app:
+  buffer_duration_s: 1.5                # How many seconds of audio to keep in the live buffer.
+  activation_threshold: 0.03            # RMS energy level to trigger a prediction (prevents predicting on silence).
+  prediction_cooldown_s: 1.0            # Minimum time in seconds to wait between predictions.
