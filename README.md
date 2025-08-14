@@ -86,7 +86,7 @@ Key features that address real-world challenges include:
 
 ## Video  
   
-[**Click here to watch a full video demonstration on YouTube.**](https://www.youtube.com/watch?v=DbHUUy5Uk7Q)
+[**Click here to watch procedure video on YouTube.**](https://www.youtube.com/watch?v=DbHUUy5Uk7Q)
 ## Setup and Usage
 
 ### 1. Installation
