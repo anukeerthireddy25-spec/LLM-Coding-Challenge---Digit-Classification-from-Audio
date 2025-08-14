@@ -93,8 +93,8 @@ Key features that address real-world challenges include:
 First, clone the repository and install the required dependencies into a virtual environment.
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-name>
+git clone <git@github.com:anukeerthireddy25-spec/LLM-Coding-Challenge---Digit-Classification-from-Audio.git>
+cd <LLM-Coding-Challenge---Digit-Classification-from-Audio>
 python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+source venv/bin/activate 
 pip install -r requirements.txt
