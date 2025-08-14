@@ -17,9 +17,9 @@ The model achieves a strong baseline performance, demonstrating the effectivenes
 
 The confusion matrix below shows the model's performance on each digit. The diagonal represents correct predictions. The off-diagonal values highlight areas for future improvement (e.g., the model occasionally confuses '3' and '5', and '7' and '8').
 
-![Confusion Matrix](https://i.imgur.com/your_confusion_matrix_image_url.png)
+![Confusion Matrix]([https://i.imgur.com/your_confusion_matrix_image_url.png](https://imgur.com/a/7vHroiz))
 
-***Note: To display the image, upload your `confusion_matrix.png` file to a service like [Imgur](https://imgur.com/upload) and replace the URL above with your image link.***
+
 
 ---
 
