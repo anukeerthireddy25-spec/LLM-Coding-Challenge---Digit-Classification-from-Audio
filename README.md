@@ -27,7 +27,6 @@ The confusion matrix below shows the model's performance on each digit. The diag
 
 The final application provides a user-friendly interface for real-time digit classification, complete with live audio visualization and prediction confidence plots.
 
-*(Here you would insert an animated GIF of your final GUI application in action. You can use a tool like Giphy Capture or ScreenToGif to record your screen.)*
 
 ---
 
@@ -85,6 +84,8 @@ Key features that address real-world challenges include:
 
 ---
 
+## Video  
+![Dropbox link](https://www.dropbox.com/scl/fi/dcqhmg4sczh6gc1rdjc23/spokendigit_classifier.mp4?rlkey=8iov6ohvjstmjwlqzu9sbsmdj&st=t83m4zl0&dl=0)
 ## Setup and Usage
 
 ### 1. Installation
