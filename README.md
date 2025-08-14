@@ -86,6 +86,8 @@ Key features that address real-world challenges include:
 
 ## Video  
 ![Dropbox link](https://www.dropbox.com/scl/fi/dcqhmg4sczh6gc1rdjc23/spokendigit_classifier.mp4?rlkey=8iov6ohvjstmjwlqzu9sbsmdj&st=t83m4zl0&dl=0)
+
+![Yoputube link](https://youtu.be/DbHUUy5Uk7Q)
 ## Setup and Usage
 
 ### 1. Installation
