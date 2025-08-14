@@ -1,6 +1,6 @@
 # LLM Coding Challenge: Spoken Digit Classification
 
-This project is a submission for the LLM Coding Challenge. It's a lightweight prototype that classifies spoken digits (0–9) from audio input in real time. The entire project, from initial scaffolding to the final interactive GUI, was built in a few hours with the close collaboration of an LLM coding assistant.
+This project is a submission for the LLM Coding Challenge. It's a lightweight prototype that classifies spoken digits (0–9) from audio input in real time. The entire project, from initial scaffolding to the final interactive GUI, was built in a few hours with the close collaboration of an LLM coding assistant( Gemini and Copilot).
 
 ---
 
@@ -35,11 +35,13 @@ The final application provides a user-friendly interface for real-time digit cla
 
 A core part of this challenge was demonstrating effective collaboration with an LLM. Throughout this project, the LLM was used not as a code generator, but as an interactive "pair programmer" and technical consultant.
 
-Our workflow followed a distinct pattern:
+My workflow followed a distinct pattern:
 
-1.  **Scaffolding**: Initial prompts were high-level, asking the LLM to generate the boilerplate code for the project structure, including the PyTorch `Dataset` class, the `nn.Module` for the model, and the basic training loop.
-2.  **Iterative Debugging**: This was the most critical phase. When encountering errors (`ModuleNotFoundError`, `RuntimeError`, `AttributeError`), the full traceback was provided to the LLM. This allowed the LLM to analyze the context and provide precise fixes, such as correcting dependency lists, fixing tensor shape mismatches in the model's linear layer, and refactoring the data loading logic to be more robust.
-3.  **Architectural Reasoning**: We used the LLM to reason about design choices. For example, we discussed the pros and cons of different data loading strategies (`datasets` library vs. `torchaudio` vs. direct download) to overcome persistent library versioning issues, ultimately settling on the most stable approach. The final, robust "trigger and capture" logic in the GUI was developed through this iterative dialogue.
+1. **Deep Research and Strategy Formulation**: The project began with a deep research phase where the LLM was prompted to analyze the problem description and generate a comprehensive technical guide. This document served as a complete blueprint for the project, providing a deep understanding of the FSDD dataset, justifying key architectural decisions (like choosing Mel Spectrograms over MFCCs), and outlining strategies for model improvement and real-time integration. This foundational research provided all the resources needed to complete the project and allowed for a rapid, end-to-end development process built on a solid, pre-validated strategy
+
+2.  **Scaffolding**: Initial prompts were high-level, asking the LLM to generate the boilerplate code for the project structure, including the PyTorch `Dataset` class, the `nn.Module` for the model, and the basic training loop.
+3.  **Iterative Debugging**: This was the most critical phase. When encountering errors (`ModuleNotFoundError`, `RuntimeError`, `AttributeError`), the full traceback was provided to the LLM. This allowed the LLM to analyze the context and provide precise fixes, such as correcting dependency lists, fixing tensor shape mismatches in the model's linear layer, and refactoring the data loading logic to be more robust.
+4.  **Architectural Reasoning**: We used the LLM to reason about design choices. For example, we discussed the pros and cons of different data loading strategies (`datasets` library vs. `torchaudio` vs. direct download) to overcome persistent library versioning issues, ultimately settling on the most stable approach. The final, robust "trigger and capture" logic in the GUI was developed through this iterative dialogue.
 
 ---
 
